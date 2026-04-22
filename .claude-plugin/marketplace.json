@@ -1,0 +1,21 @@
+{
+  "plugins": [
+    {
+      "name": "design",
+      "skills": [
+        "./skills/design/design-shape/SKILL.md",
+        "./skills/design/design-core/SKILL.md",
+        "./skills/design/design-audit/SKILL.md",
+        "./skills/design/design-polish/SKILL.md"
+      ]
+    },
+    {
+      "name": "research",
+      "skills": [
+        "./skills/research/research-core/SKILL.md",
+        "./skills/research/research-ideation/SKILL.md",
+        "./skills/research/research-review/SKILL.md"
+      ]
+    }
+  ]
+}
