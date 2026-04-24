@@ -1,20 +1,34 @@
 {
+  "name": "tcls-skills",
+  "owner": {
+    "name": "tncrd"
+  },
+  "metadata": {
+    "description": "Curated skills for design, research, and writing. Token-efficient, markdown-only, zero dependencies.",
+    "version": "1.0.0"
+  },
   "plugins": [
     {
       "name": "design",
+      "description": "UI/UX design pipeline: discovery interview, core principles, quality audit, and final polish. Use when building interfaces, choosing typography/color, animating components, or auditing existing designs.",
+      "source": "./",
+      "strict": false,
       "skills": [
-        "./design/design-shape/SKILL.md",
-        "./design/design-core/SKILL.md",
-        "./design/design-audit/SKILL.md",
-        "./design/design-polish/SKILL.md"
+        "./design/design-shape",
+        "./design/design-core",
+        "./design/design-audit",
+        "./design/design-polish"
       ]
     },
     {
       "name": "research",
+      "description": "Research pipeline: literature search, paper reading, hypothesis generation, and systematic field mapping. Use when reading papers, finding sources, generating ideas, or surveying a research area.",
+      "source": "./",
+      "strict": false,
       "skills": [
-        "./research/research-core/SKILL.md",
-        "./research/research-ideation/SKILL.md",
-        "./research/research-review/SKILL.md"
+        "./research/research-core",
+        "./research/research-ideation",
+        "./research/research-review"
       ]
     }
   ]
