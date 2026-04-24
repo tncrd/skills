@@ -107,10 +107,7 @@ Correct:
 $$\mathcal{L} = -\log p(y \mid x, \theta)$$
 
 Wrong:
-```
-L = -log p(y | x, θ)
-```
-]
+\[L = -log p(y | x, θ)\]
 
 ## Results
 [2–4 key numbers with context. Delta over the relevant baseline.
