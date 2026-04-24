@@ -28,9 +28,9 @@ This is not strictly sequential — you loop between steps as understanding deep
 |------|------|
 | Planning the review | [review-process.md](reference/review-process.md) |
 | Identifying gaps and positioning | [gap-analysis.md](reference/gap-analysis.md) |
-| Searching for papers | → `research` skill's [search-strategies.md](../research/reference/search-strategies.md) |
-| Reading papers | → `research` skill's [reading-strategies.md](../research/reference/reading-strategies.md) |
-| Taking notes | → `research` skill's [note-templates.md](../research/reference/note-templates.md) |
+| Searching for papers | → `research` skill's [search-strategies.md](../research-core/reference/search-strategies.md) |
+| Reading papers | → `research` skill's [reading-strategies.md](../research-core/reference/reading-strategies.md) |
+| Taking notes | → `research` skill's [note-templates.md](../research-core/reference/note-templates.md) |
 | Generating ideas from gaps | → `research-ideation` skill |
 
 ## Project structure
@@ -49,7 +49,7 @@ project/
 
 ## _survey.md
 
-The central synthesis artifact. Updated after every batch of papers read. Format defined in `research` skill's [synthesis-methods.md](../research/reference/synthesis-methods.md).
+The central synthesis artifact. Updated after every batch of papers read. Format defined in `research-core` skill's [synthesis-methods.md](../research/reference/synthesis-methods.md).
 
 **Quality test**: after 15+ papers read, someone unfamiliar with your project should be able to read `_survey.md` and understand the field in 10 minutes.
 
