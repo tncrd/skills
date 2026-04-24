@@ -3,18 +3,18 @@
     {
       "name": "design",
       "skills": [
-        "./skills/design/design-shape/SKILL.md",
-        "./skills/design/design-core/SKILL.md",
-        "./skills/design/design-audit/SKILL.md",
-        "./skills/design/design-polish/SKILL.md"
+        "./design/design-shape/SKILL.md",
+        "./design/design-core/SKILL.md",
+        "./design/design-audit/SKILL.md",
+        "./design/design-polish/SKILL.md"
       ]
     },
     {
       "name": "research",
       "skills": [
-        "./skills/research/research-core/SKILL.md",
-        "./skills/research/research-ideation/SKILL.md",
-        "./skills/research/research-review/SKILL.md"
+        "./research/research-core/SKILL.md",
+        "./research/research-ideation/SKILL.md",
+        "./research/research-review/SKILL.md"
       ]
     }
   ]
