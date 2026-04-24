@@ -1,5 +1,5 @@
 ---
-name: tcls:research-review
+name: tcls-research-review
 description: "Systematic literature review, field mapping, bibliography building, and gap analysis. Use when the user wants to map an entire research area, build a structured bibliography, find gaps in the literature, or produce a survey. Also use when the user says 'what's the state of the art in X', 'map this field', 'build a bibliography on X', or 'where are the gaps'."
 ---
 

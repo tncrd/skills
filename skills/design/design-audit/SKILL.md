@@ -1,5 +1,5 @@
 ---
-name: tcls:design-audit
+name: tcls-design-audit
 description: "Run a systematic quality audit of any UI — pages, components, designs, codebases. Scores 5 dimensions and produces a prioritized list of issues (P0–P3). Use when the user wants a design review, accessibility check, 'something feels off', pre-launch quality check, or wants to know what to fix first. Also use after implementing a design to verify quality before shipping."
 ---
 

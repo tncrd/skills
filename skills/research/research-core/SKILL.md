@@ -1,5 +1,5 @@
 ---
-name: tcls:research
+name: tcls-research
 description: "Literature search, paper reading, note-taking, and knowledge synthesis for ML research and tech exploration. Use when the user wants to find papers, read and extract from academic or technical content, take structured notes, build a bibliography, or synthesize knowledge across sources. Also use when the user says 'note this paper', 'find papers on X', 'summarize what I know about X', 'what does this paper say', or 'search for related work'."
 ---
 

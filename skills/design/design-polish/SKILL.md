@@ -1,5 +1,5 @@
 ---
-name: tcls:design-polish
+name: tcls-design-polish
 description: "Final quality pass before shipping. Catches alignment, spacing, consistency, missing states, and micro-detail issues that separate good from great. Use when the user says 'polish this', 'finishing touches', 'pre-launch review', 'almost done', 'something looks off', or wants to go from good to great. Run this AFTER design-audit — audit finds issues, polish fixes the small stuff."
 ---
 

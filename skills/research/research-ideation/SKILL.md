@@ -1,5 +1,5 @@
 ---
-name: tcls:research-ideation
+name: tcls-research-ideation
 description: "Structured ideation frameworks for generating research ideas, finding novel angles, and tracking hypotheses over time. Use when the user wants new ideas, says 'I'm stuck', 'what could I try', 'find me an angle on X', 'brainstorm', 'what's novel here', or when gap analysis reveals unexplored territory. Also use to manage the ideas/ tracker."
 ---
 

@@ -1,5 +1,5 @@
 ---
-name: tcls:design-shape
+name: tcls-design-shape
 description: "Plan the design of a feature or page BEFORE writing any code. Runs a focused discovery interview and produces a design brief that guides implementation. Use at the START of any significant UI work — when the user says 'I want to build X', 'design a landing page for Y', 'create a dashboard for Z', or any time design decisions need to be made before implementation begins. Also use when a design feels directionless or 'AI generic' — shaping forces the thinking that generic output skips."
 ---
 

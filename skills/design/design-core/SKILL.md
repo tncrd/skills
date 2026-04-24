@@ -1,5 +1,5 @@
 ---
-name: tcls:design
+name: tcls-design
 description: "Frontend design system, visual guidelines, and motion graphics. Use this skill whenever the user asks to build, style, or improve any UI — pages, components, landing pages, dashboards, blogs, apps — or mentions typography, colors, layout, spacing, animations, motion graphics, or design quality. Also use when adding or implementing any new feature in an existing app (forms, inputs, modals, menus, tags, filters, lists, buttons) — any feature that involves UI needs design guidance even if the request sounds purely functional. Also use for SVG animation, scroll-driven effects, page transitions, or visual choreography. Invoke when the user says things like 'make it look better', 'it feels off', 'too generic', 'add some personality', 'animate this', 'make it move', 'add X to my app', 'I need a form for X', 'implement X feature'."
 ---
 
