@@ -627,13 +627,14 @@ def index(literature_dir="literature", lint=False):
                 key, _, val = line.partition(":")
                 fm[key.strip()] = val.strip().strip('"').strip("'")
 
-        missing = [k for k in ["title", "year", "tags", "status"] if not fm.get(k)]
+        missing = [k for k in ["title", "description", "year", "tags", "status"] if not fm.get(k)]
         if missing:
             warnings.append(f"  ⚠ missing {', '.join(missing)}: {f.name}")
 
         papers.append({
             "file": f.name,
             "title": fm.get("title", "Untitled")[:60],
+            "description": fm.get("description", "—")[:80],
             "year": fm.get("year", "?"),
             "contribution": fm.get("contribution", "—"),
             "tags": fm.get("tags", "").strip("[]"),
@@ -646,12 +647,12 @@ def index(literature_dir="literature", lint=False):
         "# Literature Index",
         f"*Updated: {date.today()} · {len(papers)} paper{'s' if len(papers) != 1 else ''}*",
         "",
-        "| File | Title | Year | Contribution | Tags | Status |",
-        "|------|-------|------|-------------|------|--------|",
+        "| File | Title | Description | Year | Contribution | Tags | Status |",
+        "|------|-------|-------------|------|-------------|------|--------|",
     ]
     for p in papers:
         link = f"[{p['file']}]({p['file']})"
-        lines.append(f"| {link} | {p['title']} | {p['year']} | {p['contribution']} | {p['tags']} | {p['status']} |")
+        lines.append(f"| {link} | {p['title']} | {p['description']} | {p['year']} | {p['contribution']} | {p['tags']} | {p['status']} |")
 
     index_path.write_text("\n".join(lines) + "\n", encoding="utf-8")
     print(f"Updated {index_path} ({len(papers)} papers)")

@@ -77,6 +77,7 @@ The template enforces compression. Each section has an explicit length limit —
 ---
 type: paper | paper-impl | article | comparison
 title: "..."
+description: "One dense sentence (~25 words max): what the paper does + headline result/claim."
 authors: [Last1 et al.]
 year: 2024
 arxiv: "2402.03300"    # omit if not applicable
@@ -90,11 +91,16 @@ status: to-read | reading | read | implemented
 Not the abstract — your compression of it.]
 
 ## Method
-[Core algorithm or design decision.
-For scientific/ML papers: the equations are mandatory, not optional.
+[Detail level depends on note mode (default: **mid**).
+
+**Modes — set by user, default mid:**
+- **condense** — core equation + key mechanism + headline result. A useful standalone note, no fluff but no gaps. ~10 lines method.
+- **mid** *(default)* — all key equations in LaTeX, per-component breakdown, variant tables, concrete result numbers, ASCII art schema of architecture/dataflow. What you'd need to never re-read the paper.
+- **lossless** — everything in mid PLUS full hyperparameter tables, every numbered equation, training procedure, ablation details, appendix tricks. Reproduction-ready.
+
+For scientific/ML papers: the equations are mandatory at ALL levels.
 Write the objective function, loss, or key operation in full LaTeX.
 Then explain what each term does in 1–2 lines of prose.
-Max 15 lines total including equations.
 
 Math notation rules — no exceptions:
 - Display equations: $$...$$
