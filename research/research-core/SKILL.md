@@ -64,6 +64,19 @@ uv run .agents/skills/research/scripts/papers.py index literature/
 
 Optional: set `SEMANTIC_SCHOLAR_API_KEY` for higher rate limits (free: https://www.semanticscholar.org/product/api#api-key-form).
 
+## Checklists (required — create a TodoWrite task per item before proceeding)
+
+### Before writing any note ("note this paper", "read this paper")
+- [ ] Read `reference/note-templates.md` — vault note structure and conventions
+- [ ] Read `literature/index.md` — check if a note already exists and absorb the style of existing entries
+
+### Before searching for papers ("find papers on X", "related work")
+- [ ] Read `reference/search-strategies.md` — query construction and snowballing strategies
+
+### Before synthesizing or surveying ("summarize what I know", "write a survey")
+- [ ] Read `literature/index.md` — inventory what is already in the vault
+- [ ] Read `reference/synthesis-methods.md` — synthesis and comparison patterns
+
 ## Reference routing
 
 | Situation | Read |
@@ -72,6 +85,7 @@ Optional: set `SEMANTIC_SCHOLAR_API_KEY` for higher rate limits (free: https://w
 | Taking notes on what I read | [note-templates.md](reference/note-templates.md) |
 | Searching for papers or resources | [search-strategies.md](reference/search-strategies.md) |
 | Connecting sources, writing a survey | [synthesis-methods.md](reference/synthesis-methods.md) |
+| Writing or developing a research idea | [idea-templates.md](reference/idea-templates.md) |
 | Want new ideas or angles | → use `research-ideation` skill |
 | Mapping an entire field systematically | → use `research-review` skill |
 
