@@ -35,25 +35,25 @@ Script: `.agents/skills/research/scripts/papers.py`
 
 ```bash
 # Table of contents — see paper structure before reading
-uv run .agents/skills/research/scripts/papers.py toc 2402.03300
+uv run .agents/skills/research-core/scripts/papers.py toc 2402.03300
 
 # Read a specific section by name or number
-uv run .agents/skills/research/scripts/papers.py section 2402.03300 "GRPO"
-uv run .agents/skills/research/scripts/papers.py section 2402.03300 16
+uv run .agents/skills/research-core/scripts/papers.py section 2402.03300 "GRPO"
+uv run .agents/skills/research-core/scripts/papers.py section 2402.03300 16
 
 # Read full paper (HTML → PDF fallback)
-uv run .agents/skills/research/scripts/papers.py read 2402.03300
+uv run .agents/skills/research-core/scripts/papers.py read 2402.03300
 
 # Abstract + metadata only
-uv run .agents/skills/research/scripts/papers.py fetch 2402.03300
+uv run .agents/skills/research-core/scripts/papers.py fetch 2402.03300
 
 # Search, citations, snowball
-uv run .agents/skills/research/scripts/papers.py search "GRPO reinforcement learning"
-uv run .agents/skills/research/scripts/papers.py citations 2402.03300
-uv run .agents/skills/research/scripts/papers.py references 2402.03300
-uv run .agents/skills/research/scripts/papers.py related 2402.03300
-uv run .agents/skills/research/scripts/papers.py bibtex 2402.03300
-uv run .agents/skills/research/scripts/papers.py index literature/
+uv run .agents/skills/research-core/scripts/papers.py search "GRPO reinforcement learning"
+uv run .agents/skills/research-core/scripts/papers.py citations 2402.03300
+uv run .agents/skills/research-core/scripts/papers.py references 2402.03300
+uv run .agents/skills/research-core/scripts/papers.py related 2402.03300
+uv run .agents/skills/research-core/scripts/papers.py bibtex 2402.03300
+uv run .agents/skills/research-core/scripts/papers.py index literature/
 ```
 
 **Preferred workflow** (aligned with the extraction flow):
