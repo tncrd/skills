@@ -70,6 +70,10 @@ Optional: set `SEMANTIC_SCHOLAR_API_KEY` for higher rate limits (free: https://w
 - [ ] Read `reference/note-templates.md` — vault note structure and conventions
 - [ ] Read `literature/index.md` — check if a note already exists and absorb the style of existing entries
 
+### After writing or updating any note (mandatory — do not skip)
+- [ ] Run `papers.py index literature/ --lint` — rebuilds `literature/index.md` from YAML frontmatter and flags missing fields
+- [ ] Fix any `⚠ missing` warnings before finishing (add `description:`, `tags:`, or `year:` to the note YAML as needed)
+
 ### Before searching for papers ("find papers on X", "related work")
 - [ ] Read `reference/search-strategies.md` — query construction and snowballing strategies
 

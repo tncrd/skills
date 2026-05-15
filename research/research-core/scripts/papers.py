@@ -622,10 +622,27 @@ def index(literature_dir="literature", lint=False):
             continue
 
         fm = {}
+        current_key = None
+        list_values = []
         for line in match.group(1).splitlines():
-            if ":" in line:
+            if line.startswith("  - ") or line.startswith("- "):
+                if current_key:
+                    list_values.append(line.lstrip("- ").strip().strip('"').strip("'"))
+                continue
+            if ":" in line and not line.startswith(" "):
+                if current_key and list_values:
+                    fm[current_key] = ", ".join(list_values)
+                current_key = None
+                list_values = []
                 key, _, val = line.partition(":")
-                fm[key.strip()] = val.strip().strip('"').strip("'")
+                key = key.strip()
+                val = val.strip().strip('"').strip("'")
+                if val:
+                    fm[key] = val
+                else:
+                    current_key = key
+        if current_key and list_values:
+            fm[current_key] = ", ".join(list_values)
 
         missing = [k for k in ["title", "description", "year", "tags", "status"] if not fm.get(k)]
         if missing:
@@ -633,8 +650,8 @@ def index(literature_dir="literature", lint=False):
 
         papers.append({
             "file": f.name,
-            "title": fm.get("title", "Untitled")[:60],
-            "description": fm.get("description", "—")[:80],
+            "title": fm.get("title", "Untitled"),
+            "description": fm.get("description", "—"),
             "year": fm.get("year", "?"),
             "contribution": fm.get("contribution", "—"),
             "tags": fm.get("tags", "").strip("[]"),
